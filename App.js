@@ -2,8 +2,8 @@ import { StyleSheet, Text, View, StatusBar, Alert } from "react-native";
 import * as Location from "expo-location";
 import axios from "axios";
 import React from "react";
-import Loading from "./.expo/components/Loading";
-import Weather from "./.expo/components/Weather";
+import Loading from "./components/Loading";
+import Weather from "./components/Weather";
 
 export default function App() {
   const API_KEY = "fd881d906a7e39a1f689ef8ade4b4ba4";
