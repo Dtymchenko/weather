@@ -1,51 +1,33 @@
 import React from 'react'
 import { StyleSheet, Text, View } from "react-native";
+import {Ionicons} from '@expo/vector-icons'
 
 export default function Weather({ weather }) {
 
-    const obj = {
-    "base": "stations",
-    "clouds": {"all": 100},
-    "cod": 200,
-    "coord": {"lat": 50.4445, "lon": 30.5225},
-    "dt": 1670780724,
-    "id": 703447,
-    "main": {"feels_like": 10.97,
-    "humidity": 94, 
-    "pressure": 992,
-    "temp": 11.33,
-    "temp_max": 11.33,
-    "temp_min": 10.16},
-    "name": "Kyiv",
-    "rain": {"1h": 0.76},
-    "sys": {
-        "country": "UA",
-        "id": 2003742,
-        "sunrise": 1670737694,
-        "sunset": 1670766847,
-        "type": 2},
-        "timezone": 7200,
-        "visibility": 10000,
-        "weather": [{
-            "description": "light rain",
-            "icon": "10n",
-            "id": 500,
-            "main": "Rain"
-        }],
-        "wind": {"deg": 262, "gust": 3.13, "speed": 0.45}}
-    
-
     // console.log(weather)
-    console.log(obj)
-    // console.log(obj['temp'])
+    
 
     return (
         <View style={styles.cont}>
-            {obj.temp}
-            <Text>{weather.name}</Text>
-            {/* <Text>{obj.name}</Text> */}
-            <Text>{obj.base}</Text>
-            {/* <Text>{weather.weather}</Text> */}
+            <View style={styles.half}>
+                <View style={styles.main}>
+                    <View style={styles.main1}>
+                        <Ionicons name="rainy" size={64} color="black"/>
+                    </View>
+                    <View style={styles.main2}>
+                        <Text style={{width: 100, textAlign: "center"}}>{weather.weather[0].main}</Text>
+                    </View>
+                </View>
+                <Text>City: {weather.name}, {weather.sys.country}</Text>
+                <Text>Current temperature: {Math.round(weather.main.temp)}°</Text>
+                <Text>Feels like: {Math.round(weather.main.feels_like)}°</Text>
+                <Text>Pressure: {Math.round(weather.main.pressure)}</Text>
+                <Text>Humidity: {Math.round(weather.main.humidity)}</Text>
+            </View>
+            <View style={styles.half}>
+                
+            </View>
+            
         </View>
     )
 }
@@ -55,5 +37,24 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: "center",
         justifyContent: "center",
+        // paddingHorizontal: 5,
+    },
+    half: {
+        flex: 1,
+        alignItems: "center",
+        justifyContent: "center",
+    },
+    main: {
+        // display: "flex",
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "space-between",
+        paddingBottom: 20,
+    },
+    main1: {
+        backgroundColor: "yellow",
+    },
+    main2: {
+        backgroundColor: "red",
     },
 })
