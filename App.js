@@ -15,7 +15,6 @@ export default function App() {
       `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${API_KEY}&units=metric`
     );
     setWeather(res.data);
-    // console.log(weather);
   }
 
   async function getLocation() {
@@ -38,7 +37,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <StatusBar barStyle="dark-content" hidden="false" />
+      <StatusBar barStyle="light-content" hidden="false" />
       {isLoading ? <Loading /> : <Weather weather={weather} />}
     </View>
   );
@@ -49,8 +48,6 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
-  },
-  text: {
-    color: "white",
+    backgroundColor: "blue",
   },
 });

@@ -1,0 +1,92 @@
+export const weatherDetails = {
+    Thunderstorm: {
+        icon: "weather-lightning",
+        gradient: ["#141E30", "#243B55"],
+        title: "It is complete thunderstorm!",
+        subTitle: "If you are going out, don't forget umbrella!",
+    },
+    Drizzle: {
+        icon: "weather-rainy",
+        gradient: ["#3a7bd5", "3a6073"],
+        title: "The rain is not so strong",
+        subTitle: "I can't believe, but some people like such weather!",
+    },
+    Rain: {
+        icon: "weather-pouring",
+        gradient: ["#000046", "1CB5E0"],
+        title: "It rains outside",
+        subTitle: "Umbrella is necessary for sure!",
+    },
+    Snow: {
+        icon: "snowflake",
+        gradient: ["#83a4d4", "#b6fbff"],
+        title: "Snow snow snow :)",
+        subTitle: "High time to go out and enjoy!",
+    },
+    Mist: {
+        icon: "weather-fog",
+        gradient: ["#606c88", "#3f4c6b"],
+        title: "Mist! Visibility is limited",
+        subTitle: "Be carefull especially if you are going to drive",
+    },
+    Smoke: {
+        icon: "weather-windy",
+        gradient: ["#56CCF2", "#2F80ED"],
+        title: "Smoke! Visibility is limited",
+        subTitle: "Beware of smoke, careful while driving!",
+    },
+    Haze: {
+        icon: "weather-hazy",
+        gradient: ["#3E5151", "#DECBA4"],
+        title: "Haze! Visibility is slightly limited",
+        subTitle: "Nothing critical, just a little attention required!",
+    },
+    Dust: {
+        icon: "weather-windy-variant",
+        gradient: ["#B79891", "#94716B"],
+        title: "Dusty weather, like in desert",
+        subTitle: "Protect yourself, especially nose, eyes and mouth!",
+    },
+    Fog: {
+        icon: "weather-fog",
+        gradient: ["#606c88", "#3f4c6b"],
+        title: "Fog! Visibility is limited",
+        subTitle: "Beware of fog, take care!",
+    },
+    Sand: {
+        icon: "weather-windy-variant",
+        gradient: ["#B79891", "#94716B"],
+        title: "Weather type is sand",
+        subTitle: "I do not know even what it means!",
+    },
+    Ash: {
+        icon: "weather-windy-variant",
+        gradient: ["#B79891", "#94716B"],
+        title: "It is danger of ash",
+        subTitle: "Do not go out if you do not really need!",
+    },
+    Squall: {
+        icon: "weather-windy-variant",
+        gradient: ["#56CCF2", "#2F80ED"],
+        title: "Very very strong wind",
+        subTitle: "I do not recommend to walk now!",
+    },
+    Tornado: {
+        icon: "weather-tornado",
+        gradient: ["#56CCF2", "#2F80ED"],
+        title: "Tornado is really dangerous",
+        subTitle: "Save yourself and your friends!",
+    },
+    Clear: {
+        icon: "weather-sunny",
+        gradient: ["#56CCF2", "#2F80ED"],
+        title: "Clear sunny weather",
+        subTitle: "Call somebody and go out to walk!",
+    },
+    Clouds: {
+        icon: "weather-cloudy",
+        gradient: ["#757F9A", "#D7DDE8"],
+        title: "Cloudy weather 0_0",
+        subTitle: "Somebody likes, somebody not!",
+    },
+}
